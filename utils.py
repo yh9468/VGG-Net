@@ -12,7 +12,6 @@ import PIL
 import torch.nn as nn
 import torch.nn.init as init
 import torchvision.transforms as transforms
-
 from numpy import array
 from numpy import argmax
 from sklearn.preprocessing import LabelEncoder
@@ -70,25 +69,19 @@ def input_transform(crop_size, upscale_factor):
         transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
     ])
 
-def target_transform(crop_size):
-    return Compose([
-        transforms.ToTensor(),
-        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
-    ])
-
 
 def get_training_dataset(upscale_factor):
-    train_dir = ""
+    train_dir = "dataset/train"
     crop_size = calculate_valid_crop_size(224, upscale_factor)
 
-    return DatasetFromFolder(train_dir, input_transform= input_transform(crop_size, upscale_factor))
+    return DatasetFromFolder(train_dir, "dataset/train", input_transform= input_transform(crop_size, upscale_factor))
 
 
 def get_test_set(upscale_factor):
-    test_dir = ''
+    test_dir = 'dataset/test'
     crop_size = calculate_valid_crop_size(224, upscale_factor)
 
-    return DatasetFromFolder(test_dir,
+    return DatasetFromFolder(test_dir, "dataset/test",
                              input_transform=input_transform(crop_size, upscale_factor))
 
 def init_params(net):
