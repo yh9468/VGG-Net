@@ -25,7 +25,7 @@ def is_txt_file(filename):
 
 
 def load_img(filepath):
-    img = Image.open(filepath).convert('YCbCr')
+    img = Image.open(filepath).convert('RGB')
     return img
 
 
@@ -44,7 +44,7 @@ class DatasetFromFolder(data.Dataset):
         self.target_transform = target_transform
 
     def __getitem__(self, index):
-        input = RandomCrop(300)(load_img(self.image_filenames[index]))
+        input = load_img(self.image_filenames[index])
         target = match_one_hot_vector(self.txt_data[index])
 
         if self.input_transform:
@@ -61,28 +61,36 @@ class DatasetFromFolder(data.Dataset):
 def calculate_valid_crop_size(crop_size, upscale_factor):
     return crop_size - (crop_size % upscale_factor)
 
-def input_transform(crop_size, upscale_factor):
-    return Compose([
-        transforms.RandomCrop(crop_size, padding=4),
-        transforms.RandomHorizontalFlip(),
-        transforms.ToTensor(),
-        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
-    ])
+
+
+def input_transform():
+        return  transforms.Compose([
+                transforms.RandomCrop(32,padding=4),
+                                transforms.RandomHorizontalFlip(),
+                                        transforms.ToTensor(),
+                                                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+                                                    ])
+
+def test_transform():
+        return transforms.Compose([
+                transforms.RandomCrop(32,padding=4),
+                    transforms.ToTensor(),
+                        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+                        ])
 
 
 def get_training_dataset(upscale_factor):
     train_dir = "dataset/train"
-    crop_size = calculate_valid_crop_size(224, upscale_factor)
+# crop_size = calculate_valid_crop_size(224, upscale_factor)
 
-    return DatasetFromFolder(train_dir, "dataset/train", input_transform= input_transform(crop_size, upscale_factor))
+    return DatasetFromFolder(train_dir, "dataset/train", input_transform= input_transform())
 
 
 def get_test_set(upscale_factor):
-    test_dir = 'dataset/test'
-    crop_size = calculate_valid_crop_size(224, upscale_factor)
+    test_dir = "dataset/test"
+#   crop_size = calculate_valid_crop_size(224, upscale_factor)
 
-    return DatasetFromFolder(test_dir, "dataset/test",
-                             input_transform=input_transform(crop_size, upscale_factor))
+    return DatasetFromFolder(test_dir, "dataset/test", input_transform= test_transform())
 
 def init_params(net):
     for m in net.modules():
@@ -115,7 +123,7 @@ def match_one_hot_vector(str):
     label_encoder = LabelEncoder()
     integer_encoded = label_encoder.fit_transform(values)
 
-    onehot_encoder = OneHotEncoder(sparse=False)
+    onehot_encoder = OneHotEncoder(sparse=False, dtype="float32")
     integer_encoded = integer_encoded.reshape(len(integer_encoded), 1)
     onehot_encoded = onehot_encoder.fit_transform(integer_encoded)
     return onehot_encoded[index]

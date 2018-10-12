@@ -18,12 +18,9 @@ parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
 parser.add_argument('--lr', default=0.001, type=float, help='learning rate')
 parser.add_argument('--save_path', type=str, default='model', help='model save path')
 parser.add_argument('--upscale_factor', type=int, default=3, help="super resolution upscale factor")
-parser.add_argument('--batch_size', type=int, default=32, help='training batch size')
-parser.add_argument('--test_batch_size', type=int, default=4, help='testing batch size')
 parser.add_argument('--epochs', type=int, default=50, help='number of epochs to train for')
 parser.add_argument('--gpuids', default=[0, 1, 2, 3], nargs='+', help='GPU ID for using')
 parser.add_argument('--cuda', action='store_true', help='use cuda?')
-parser.add_argument('--threads', type=int, default=32, help='number of threads for data loader to use')
 opt = parser.parse_args()
 
 opt.gpuids = list(map(int,opt.gpuids))
@@ -38,9 +35,8 @@ if use_cuda and not torch.cuda.is_available():
 train_set = get_training_dataset(opt.upscale_factor)
 test_set = get_test_set(opt.upscale_factor)
 
-training_data_loader = DataLoader(dataset=train_set, num_workers=opt.threads, batch_size=opt.batch_size, shuffle=True)
-testing_data_loader = DataLoader(dataset=test_set, num_workers=opt.threads, batch_size=opt.test_batch_size,
-                                 shuffle=False)
+training_data_loader = DataLoader(dataset=train_set, num_workers=2, batch_size=128, shuffle=True)
+testing_data_loader = DataLoader(dataset=test_set, num_workers=2, batch_size=100, shuffle=False)
 
 
 print("Building model...")
@@ -61,7 +57,7 @@ def train(epoch):
     train_loss = 0
     correct = 0
     total = 0
-    for batch_idx, batch in enumerate(training_data_loader, 1):
+    for i, batch in enumerate(training_data_loader, 1):
         input, target = Variable(batch[0]), Variable(batch[1])
         if use_cuda:
             input = input.cuda()
@@ -70,25 +66,19 @@ def train(epoch):
         net_optim.zero_grad()
         output = net(input)
         loss = criterion(output, target)
-        loss.backword()
+        loss.backward()
         net_optim.step()
 
         train_loss += loss.item()
 
-        _, predicted = output.max(1)
-        total += target.size(0)
-        correct += predicted.eq(target).sum().item()
-
-        progress_bar(batch_idx, len(training_data_loader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
-                     % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))
+    print("===>Complete: Avg. Loss: {:.4f}".format(train_loss / len(training_data_loader)))
 
 
 def test():
     global best_acc
-    net.eval()
     test_loss = 0
 
-    for batch in enumerate(testing_data_loader):
+    for i, batch in enumerate(testing_data_loader):
         input, target = Variable(batch[0]), Variable(batch[1])
         if use_cuda:
             input = input.cuda()
