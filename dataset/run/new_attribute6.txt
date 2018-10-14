@@ -1,0 +1,397 @@
+T489653	Offenses against Public Order
+T489654	Assault
+T489655	Criminal Damage
+T489656	Assault
+T489657	Transportation Violations
+T489658	Transportation Violations
+T489659	Theft
+T489660	Criminal Trespass and Burglary
+T489661	DUI
+T489662	Assault
+T489663	Probation Violation
+T489664	Criminal Damage
+T489665	Criminal Damage
+T489666	Assault
+T489667	Assault
+T489668	Assault
+T489670	Interfere with Judicial Process
+T489671	Assault
+T489672	Criminal Damage
+T489673	Criminal Trespass and Burglary
+T489674	Assault
+T489675	Theft
+T489676	Drug Offenses
+T489677	Criminal Trespass and Burglary
+T489678	Assault
+T489679	Criminal Damage
+T489680	Criminal Damage
+T489681	DUI
+T489682	Drug Offenses
+T489683	Drug Offenses
+T489684	Criminal Damage
+T489685	Interfere with Judicial Process
+T489686	Transportation Violations
+T489688	Other
+T489689	Criminal Trespass and Burglary
+T489690	Assault
+T489693	Drug Offenses
+T489694	Drug Offenses
+T489695	Criminal Damage
+T489696	Assault
+T489697	Assault
+T489698	Failure to Appear
+T489699	Weapons and Explosives
+T489700	Offenses against Public Order
+T489701	Transportation Violations
+T489702	Drug Offenses
+T489703	Transportation Violations
+T489704	Criminal Trespass and Burglary
+T489705	Offenses against Public Order
+T489706	Theft
+T489707	Criminal Trespass and Burglary
+T489708	Criminal Trespass and Burglary
+T489709	DUI
+T489710	Transportation Violations
+T489711	Probation Violation
+T489712	Forgery
+T489713	Drug Offenses
+T489714	Failure to Appear
+T489715	Criminal Trespass and Burglary
+T489716	Probation Violation
+T489717	Assault
+T489718	DUI
+T489719	Criminal Trespass and Burglary
+T489720	Weapons and Explosives
+T489722	Criminal Trespass and Burglary
+T489723	Assault
+T489724	Assault
+T489725	Criminal Trespass and Burglary
+T489727	Drug Offenses
+T489728	Offenses against Public Order
+T489729	Assault
+T489730	Theft
+T489731	Criminal Trespass and Burglary
+T489732	Criminal Trespass and Burglary
+T489733	Criminal Trespass and Burglary
+T489734	Assault
+T489735	Transportation Violations
+T489736	Criminal Trespass and Burglary
+T489737	Other
+T489739	Criminal Trespass and Burglary
+T489740	Theft
+T489741	Criminal Trespass and Burglary
+T489742	Drug Offenses
+T489743	Criminal Damage
+T489744	Criminal Trespass and Burglary
+T489745	Probation Violation
+T489746	Weapons and Explosives
+T489747	Interfere with Judicial Process
+T489748	Transportation Violations
+T489749	Drug Offenses
+T489751	Assault
+T489752	Criminal Trespass and Burglary
+T489753	Theft
+T489754	Theft
+T489755	Probation Violation
+T489756	Probation Violation
+T489757	Criminal Damage
+T489758	Transportation Violations
+T489759	Drug Offenses
+T489764	Probation Violation
+T489765	Drug Offenses
+T489768	Drug Offenses
+T489769	Drug Offenses
+T489772	Assault
+T489775	Transportation Violations
+T489776	Homicide
+T489780	DUI
+T489781	Probation Violation
+T489782	Forgery
+T489783	Drug Offenses
+T489784	DUI
+T489786	Drug Offenses
+T489787	Assault
+T489788	Probation Violation
+T489789	Other
+T489790	Probation Violation
+T489791	Probation Violation
+T489792	Probation Violation
+T489793	Sex Crimes
+T489794	Theft
+T489796	Theft
+T489797	Forgery
+T489798	Drug Offenses
+T489799	Probation Violation
+T489800	Assault
+T489802	Drug Offenses
+T489803	Theft
+T489804	Criminal Trespass and Burglary
+T489805	Drug Offenses
+T489806	Assault
+T489808	Offenses against Public Order
+T489809	Offenses against Public Order
+T489810	Theft
+T489811	Probation Violation
+T489812	Probation Violation
+T489813	Probation Violation
+T489814	Probation Violation
+T489816	Drug Offenses
+T489817	Transportation Violations
+T489818	Theft
+T489819	Drug Offenses
+T489820	Failure to Appear
+T489821	DUI
+T489822	Assault
+T489824	Transportation Violations
+T489825	Theft
+T489826	Drug Offenses
+T489827	Theft
+T489828	Theft
+T489829	Drug Offenses
+T489830	Drug Offenses
+T489831	Theft
+T489832	Drug Offenses
+T489833	Criminal Trespass and Burglary
+T489834	Theft
+T489835	Robbery
+T489836	Probation Violation
+T489837	Assault
+T489838	Criminal Trespass and Burglary
+T489839	Robbery
+T489840	Probation Violation
+T489841	Theft
+T489842	Criminal Trespass and Burglary
+T489843	DUI
+T489844	Criminal Trespass and Burglary
+T489845	Criminal Trespass and Burglary
+T489846	Assault
+T489847	Criminal Trespass and Burglary
+T489848	Other
+T489850	Criminal Trespass and Burglary
+T489851	Transportation Violations
+T489852	Probation Violation
+T489853	Transportation Violations
+T489854	Criminal Trespass and Burglary
+T489856	Assault
+T489857	Probation Violation
+T489859	Offenses against Public Order
+T489860	Weapons and Explosives
+T489861	Drug Offenses
+T489862	Drug Offenses
+T489863	Drug Offenses
+T489865	Weapons and Explosives
+T489867	Criminal Trespass and Burglary
+T489868	Theft
+T489869	Theft
+T489870	Probation Violation
+T489871	Assault
+T489873	Weapons and Explosives
+T489874	Assault
+T489875	Drug Offenses
+T489877	Drug Offenses
+T489878	DUI
+T489880	Weapons and Explosives
+T489881	Assault
+T489882	Criminal Trespass and Burglary
+T489883	Theft
+T489884	Weapons and Explosives
+T489885	Other
+T489886	Transportation Violations
+T489887	Theft
+T489888	DUI
+T489889	Probation Violation
+T489890	Theft
+T489891	Theft
+T489892	Transportation Violations
+T489895	Assault
+T489650	Other
+T489651	Offenses against Public Order
+T489652	Assault
+T489396	Theft
+T489414	Theft
+T489415	Probation Violation
+T489417	Theft
+T489418	Probation Violation
+T489420	Drug Offenses
+T489421	Drug Offenses
+T489422	Drug Offenses
+T489423	Assault
+T489425	Assault
+T489426	Probation Violation
+T489428	Other
+T489429	Transportation Violations
+T489430	Assault
+T489432	Theft
+T489433	Criminal Trespass and Burglary
+T489435	Drug Offenses
+T489437	Theft
+T489438	Drug Offenses
+T489439	DUI
+T489440	Theft
+T489441	Assault
+T489442	Drug Offenses
+T489443	Probation Violation
+T489444	Drug Offenses
+T489445	Criminal Damage
+T489446	Criminal Trespass and Burglary
+T489447	DUI
+T489448	Transportation Violations
+T489449	Transportation Violations
+T489450	DUI
+T489451	Robbery
+T489452	Assault
+T489453	Transportation Violations
+T489454	Drug Offenses
+T489455	Criminal Trespass and Burglary
+T489456	Assault
+T489457	Assault
+T489458	Drug Offenses
+T489459	Failure to Appear
+T489460	Drug Offenses
+T489461	Criminal Trespass and Burglary
+T489462	Assault
+T489463	Assault
+T489465	Theft
+T489466	Assault
+T489467	Drug Offenses
+T489468	DUI
+T489469	Drug Offenses
+T489471	Drug Offenses
+T489472	Other
+T489473	Probation Violation
+T489474	Transportation Violations
+T489475	Drug Offenses
+T489476	Criminal Trespass and Burglary
+T489477	Criminal Damage
+T489479	Theft
+T489480	Theft
+T489481	DUI
+T489482	Other
+T489484	Drug Offenses
+T489485	Probation Violation
+T489487	Weapons and Explosives
+T489488	Drug Offenses
+T489490	Theft
+T489491	Transportation Violations
+T489492	Theft
+T489493	Assault
+T489494	Weapons and Explosives
+T489495	Homicide
+T489496	Assault
+T489497	Drug Offenses
+T489499	Drug Offenses
+T489500	Assault
+T489501	Transportation Violations
+T489502	Drug Offenses
+T489504	Criminal Trespass and Burglary
+T489508	Transportation Violations
+T489511	Probation Violation
+T489513	Theft
+T489514	Criminal Trespass and Burglary
+T489515	Assault
+T489516	Drug Offenses
+T489517	Robbery
+T489518	Drug Offenses
+T489519	Criminal Damage
+T489520	Drug Offenses
+T489522	Drug Offenses
+T489523	Assault
+T489524	Criminal Damage
+T489525	Drug Offenses
+T489526	Courts and Civil Proceedings Violations
+T489527	Criminal Trespass and Burglary
+T489531	Interfere with Judicial Process
+T489533	Drug Offenses
+T489534	Crimes Against Children
+T489535	Theft
+T489536	DUI
+T489537	DUI
+T489538	Offenses against Public Order
+T489540	Criminal Trespass and Burglary
+T489541	Assault
+T489542	Probation Violation
+T489543	Probation Violation
+T489544	Criminal Trespass and Burglary
+T489545	Transportation Violations
+T489546	Theft
+T489547	Criminal Damage
+T489548	Probation Violation
+T489549	Offenses against Public Order
+T489550	Probation Violation
+T489552	Theft
+T489554	Interfere with Judicial Process
+T489555	Criminal Trespass and Burglary
+T489558	Robbery
+T489559	Criminal Trespass and Burglary
+T489560	Probation Violation
+T489561	Probation Violation
+T489562	Weapons and Explosives
+T489563	Theft
+T489564	Probation Violation
+T489565	Theft
+T489566	Criminal Trespass and Burglary
+T489569	Transportation Violations
+T489571	Criminal Trespass and Burglary
+T489572	Criminal Trespass and Burglary
+T489573	Assault
+T489574	Theft
+T489575	Theft
+T489576	Weapons and Explosives
+T489577	Failure to Appear
+T489578	Other
+T489581	Forgery
+T489583	Weapons and Explosives
+T489584	Drug Offenses
+T489585	Theft
+T489586	Criminal Trespass and Burglary
+T489587	Theft
+T489588	Theft
+T489589	Probation Violation
+T489590	Sex Crimes
+T489592	Criminal Trespass and Burglary
+T489593	Criminal Trespass and Burglary
+T489594	Criminal Trespass and Burglary
+T489595	Offenses against Public Order
+T489596	Other
+T489597	Failure to Appear
+T489599	Criminal Trespass and Burglary
+T489600	Weapons and Explosives
+T489601	Other
+T489602	Interfere with Judicial Process
+T489603	Other
+T489604	Criminal Trespass and Burglary
+T489605	Robbery
+T489608	Drug Offenses
+T489609	Theft
+T489610	Assault
+T489611	Theft
+T489612	Drug Offenses
+T489613	Theft
+T489614	Failure to Appear
+T489615	Theft
+T489616	Assault
+T489617	Assault
+T489619	Family Offenses
+T489620	Liquor Violation
+T489621	Other
+T489624	Drug Offenses
+T489625	DUI
+T489626	Criminal Trespass and Burglary
+T489627	Criminal Trespass and Burglary
+T489630	Criminal Trespass and Burglary
+T489631	Assault
+T489632	Assault
+T489633	Criminal Trespass and Burglary
+T489634	Offenses against Public Order
+T489635	Criminal Trespass and Burglary
+T489637	Drug Offenses
+T489638	Assault
+T489639	Criminal Damage
+T489640	Drug Offenses
+T489641	Transportation Violations
+T489643	Failure to Appear
+T489645	Drug Offenses
+T489646	Drug Offenses
+T489647	Criminal Trespass and Burglary
+T489648	Criminal Trespass and Burglary
+T489649	Assault
