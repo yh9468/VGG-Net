@@ -102,7 +102,9 @@ def checkpoint(epoch):
             raise
 
     model_out_path = "model/model_epoch_{}.pth".format(epoch)
-    torch.save(net, model_out_path)
+
+    torch.save(net.state_dict(), model_out_path)
+# torch.save(net, model_out_path)
     print("Checkpoint saved to {}".format(model_out_path))
 
 
